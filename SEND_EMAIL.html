@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FORMATO DE ENVIO DE CORREOS</title>
+  </head>
+  <body>
+    <!-- usualmente la forma para llamar a las formas es la siguiente:
+    <form class="" action="(nombre de tu archivo.html)" method="post">
+    pero en este caso utilizaremos el siguiente:
+    <form class="" action="mailto:wvaleric@gmail.com" method="post" enctype="text/plain">
+    donde enctype es el tipo MIME (Media Type) que es un identificador de dos partes
+    de contenido de archivos y contenido de formato transmitido en Internet y
+    funciona como un depurador, es decir limpia la memoria para que la podamos agregar algo
+    Por otro lado, para enviar correos a un destinatario es necesario el uso de
+    action="mailto:(correo del destinatario)"-->
+    <form action="mailto:wvaleric@gmail.com" method="post" enctype="text/plain">
+      <label>Ingrese su nombre: </label>
+      <input type="text" name="YourName" value=""><br />
+      <label>Ingrese su correo: </label>
+      <input type="email" name="YourEmail" value=""><br />
+      <label>Ingrese su mensaje: </label><br />
+      <textarea name="YourMessage" rows="10" cols="30"></textarea><br />
+      <input type="submit" name=""><br />
+    </form>
+  </body>
+</html>
